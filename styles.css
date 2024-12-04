@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #105bb7, #447d3f);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+body::after {
+    content: ""; /* Cria o elemento de fundo */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 300px; /* Ajuste o tamanho da imagem */
+    height: 300px; /* Ajuste o tamanho da imagem */
+    background-image: url('/image/bilhetemega.png');
+    background-size: cover;
+    background-position: bottom right;
+    z-index: -1; /* Garante que a imagem fique atrás do conteúdo */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.logo {
+    max-width: 350px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #589c52;
+    color: white;
+    border: none;
+    padding: 30px 70px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 15px 0;
+}
+
+button:disabled {
+    background-color: #bdbdbd;
+    cursor: not-allowed;
+}
+
+
+.resultados {
+    display: grid; /* Mudança para grid layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas uniformes */
+    gap: 20px; /* Espaço entre os números */
+    margin-top: 20px;
+}
+
+.numero {
+    background-color: #215824;
+    color: white;
+    font-size: 2rem;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.copy {
+    font-size: 1rem;
+    color: white;
+    line-height: 1.5;
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.logomega {
+    max-width: 320px;
+    margin-bottom: 15px;
+}
